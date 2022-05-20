@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex</title>
+  </head>
+  <body>
+    <input placeholder="Numero 1" type="text" id="num1" />
+    <br />
+    <input placeholder="Numero 2" type="text" id="num2" />
+    <br />
+    <label for="operações">Selecione a operação:</label>
+    <select name="operações" id="oper">
+      <option value="adição">adição</option>
+      <option value="subtração">subtração</option>
+      <option value="multiplicação">multiplicação</option>
+      <option value="divisão">divisão</option>
+      <option value="divisão sem resto">divisão sem resto</option>
+      <option value="resto da divisão">resto da divisão</option>
+      <option value="potenciação">potenciação</option>
+    </select>
+    <input type="button" value="Calcular" onclick="operacao()" />
+    <h1 id="output">.</h1>
+
+    <script src="script.js"></script>
+  </body>
+</html>
