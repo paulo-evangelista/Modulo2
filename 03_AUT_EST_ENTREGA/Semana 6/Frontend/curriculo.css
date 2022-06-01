@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to bottom left, #cf2e2e, #7f08b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 20px;
+  z-index: 3;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.circle1,
+.circle2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  transition: all 1s;
+}
+
+.circle1 {
+  left: 10%;
+  top: 5%;
+}
+
+.circle2 {
+  right: 10%;
+  bottom: 5%;
+}
+
+.circle1:hover,
+.circle2:hover {
+  width: 25rem;
+  height: 25rem;
+  transition: all 1s;
+}
+
+.dashboard {
+  flex: 1;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.3)
+  );
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  height: inherit;
+}
+
+.h2 {
+  margin-top: 105px;
+}
+
+.resto {
+  flex: 2;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+}
+
+.photo {
+  padding: 10px;
+  height: 200px;
+  border-radius: 20%;
+  transition: all 0.3s;
+}
+
+.photo:hover {
+  height: 220px;
+  transition: all 0.3s;
+}
+
+.dashFooter {
+  display: inherit;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.locationIcon {
+  width: 20px;
+}
+
+.student {
+  min-height: 250px;
+}
+
+table {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  align-items: center;
+}
+a {
+  font-size: x-large;
+  font-weight: bolder;
+  color: #7f08b2;
+  transition: all 1s;
+}
+
+a:hover {
+  color: lightblue;
+  font-size: xx-large;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+tr {
+  transition: all 0.2s;
+}
+
+tr:hover {
+  font-size: large;
+}
